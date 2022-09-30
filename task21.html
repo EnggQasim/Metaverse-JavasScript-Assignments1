@@ -1,0 +1,27 @@
+<!-- They think of something you could store in a JavaScript Object.
+   Write a program that creates Objects containing these items.
+
+.-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      <script>
+        var student1 = {
+          'id':1,
+          'name':"Muhammad Qasim",
+          'fname':"Muhammad Aslam",
+          'age':30
+        }
+        
+        for (const[key,value] of Object.entries(student1)){
+          document.write(key,"=",value,"<br>")
+        }
+      </script>  
+    </body>
+    </html>

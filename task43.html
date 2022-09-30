@@ -1,0 +1,45 @@
+<!--Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great()
+     with a copy of the array of magicians’ names. Because the original array will be unchanged, 
+     return the new array and store it in a separate array. Call show_magicians() with each array
+      to show that you have one array of the original names and one array with the Great added to 
+      each magician’s name. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    magicians = ["Tom", "Dick", "Herry"];
+    var new_magicians = magicians.slice()
+
+    function show_magicians(mgs) {
+        for(i=0;i<mgs.length;i++){
+            document.write("<h3>"+mgs[i]+"</h3>")
+        }
+    }
+
+    function make_great(mgs) {
+        for(var i=0;i<mgs.length;i++) {
+            mgs[i] = "Great " + mgs[i];
+        }
+    }
+
+
+
+    
+
+    make_great(new_magicians);
+    document.write("<h1>New array : </h1>");
+    show_magicians(new_magicians);
+
+    document.write("<h1>Original : </h1>");
+    show_magicians(magicians);
+
+    </script>
+</body>
+</html>

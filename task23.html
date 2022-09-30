@@ -1,0 +1,35 @@
+<!-- Conditional Tests: Write a series of conditional tests. 
+  Print a statement describing each test and your prediction for the results of each test.
+   Your code should look something like this:
+
+
+
+.-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      <script>
+        let car = 'subaru';
+        //True 5 test
+        console.log(car == 'subaru'?true:false);
+        console.log(car != 'bmw'?true:false);
+        console.log(car.length > 'bmw'.length?true:false);
+        console.log(car !== 'Subarn'?true:false);
+        console.log(car.toLowerCase() !== 'subarn'.toUpperCase()?true:false);
+        console.log("=========False===========")
+        //False Test
+        console.log(car != 'subaru'?true:false);
+        console.log(car == 'bmw'?true:false);
+        console.log(car.length < 'bmw'.length?true:false);
+        console.log(car === 'Subarn'?true:false);
+        console.log(car.toLowerCase() === 'subarn'.toUpperCase()?true:false);
+
+      </script>  
+    </body>
+    </html>

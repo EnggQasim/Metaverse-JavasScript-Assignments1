@@ -1,0 +1,26 @@
+<!-- Cities: Write a function called describe_city() that accepts the 
+    name of a city and its country. The function should print a simple sentence,
+     such as Karachi is in Pakistan. Give the parameter for the country a default value.
+      Call your function for three different cities, at least one of which is not in the 
+      default country.
+. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function describe_city(city, country = "Pakistan") {
+    document.write("<h1>"+ city +  " is in " + country + "</h1>");
+    }
+    describe_city("Lahore");
+    describe_city("Dubai", "UAE");
+    describe_city("Kolkutta", "India");
+
+    </script>
+</body>
+</html>

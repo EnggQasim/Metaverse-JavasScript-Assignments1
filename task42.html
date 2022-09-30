@@ -1,0 +1,33 @@
+<!--42.Great Magicians: Start with a copy of your program from
+     Exercise 39. Write a function called make_great() that modifies the array 
+     of magicians by adding the phrase the Great to each magician’s name. Call show_magicians()
+     to see that the list has actually been modified.. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    var magicians = ["Tom", "Dick", "Herry"];
+
+    function show_magicians(mgs) {
+        for(i=0;i<mgs.length;i++){
+            document.write("<h1>"+mgs[i]+"</h1>")
+        }
+    }
+    function make_great(mgs) {
+        for(var i=0;i<mgs.length;i++) {
+            mgs[i] = "Great " + mgs[i];
+        }
+    }
+    make_great(magicians);
+    show_magicians(magicians);
+
+    </script>
+</body>
+</html>

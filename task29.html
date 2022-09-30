@@ -1,0 +1,39 @@
+<!-- Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent
+     if statements that check for certain fruits in your array.
+• Make a array of your three favorite fruits and call it favorite_fruits.
+
+• Write five if statements. Each should check whether a certain kind of fruit is in your array. 
+If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+
+.-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      <script>
+
+        var favorite_fruits = ['mango','banana','orange','watermillon','apple']
+
+        function fn_check_fuit(fruit){
+            for(i=0;i<=favorite_fruits.length;i++){
+                if (favorite_fruits[i] == fruit){
+                    document.write("<h1>You really like "+favorite_fruits[i]+"!</h1>");
+                    break;
+                }
+            }
+        }
+        fn_check_fuit("apple")
+        fn_check_fuit("malta")
+        fn_check_fuit("orange")
+        fn_check_fuit("banna")
+        fn_check_fuit("mango")
+        fn_check_fuit("watermillon")
+
+      </script>  
+    </body>
+    </html>

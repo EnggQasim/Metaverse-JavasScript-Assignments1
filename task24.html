@@ -1,0 +1,70 @@
+<!-- More Conditional Tests: You don’t have to limit the number of 
+  tests you create to 10. If you want to try more comparisons, write more tests. 
+  Have at least one True and one False result for each of the following:
+
+  Tests for equality and inequality with strings
+
+• Tests using the lower case function
+
+• Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+
+• Tests using "and" and "or" operators
+
+• Test whether an item is in a array
+
+• Test whether an item is not in a array
+
+.-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      <script>
+        let text = '1';
+        //True 5 test
+        // • Tests for equality and inequality with strings
+        console.log(text == '1'?true:false);
+        console.log(text == 1?true:false);
+        console.log('Pakistan'=='Pakistan');
+        console.log('Pakistan'==='Pakistan');
+
+        // • Tests using the lower case function
+        console.log("Pakistan".toLowerCase()== "PaKiStAn".toLowerCase());
+
+        // Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+        console.log(1 == 1)
+        console.log(1 >= 7)
+        console.log(1 <= 6)
+        console.log(1 != 1)
+
+        // • Tests using "and" and "or" operators
+        var user = 'admin';
+        var password = 'admin'
+
+        console.log("user and password", user==='admin' && password==='admin')
+        console.log("user and password", user==='abc' || password==='xyz')
+
+        // • Test whether an item is in a array
+
+        var cities=['karachi','lahore','islamabad']
+        console.log("Array item check: ",cities.length>=1)
+
+        // • Test whether an item is not in a array
+        console.log("Array item check: ",cities.length==0)
+
+
+
+
+
+        
+       
+        
+
+      </script>  
+    </body>
+    </html>

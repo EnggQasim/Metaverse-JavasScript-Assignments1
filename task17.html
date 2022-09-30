@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var names = ['Asif','Hamza','Junaid','Khalid']
+        names.push("Rashid","Yasir","Hammad");
+        var rnames = []
+        
+
+        rnames.push(names.pop())
+        rnames.push(names.pop())
+        rnames.push(names.pop())
+        rnames.push(names.pop())
+        rnames.push(names.pop())
+        document.write("<h1>Remove guest list</h1>")
+        for(var i=0;i<rnames.length;i++){
+            document.write(rnames[i]+" Sorry! <br>");
+        }
+        document.write("<h1>Invited Guest List</h1>")
+        for(var i=0;i<names.length;i++){
+            document.write(names[i]+" you are invited<br>");
+        }
+
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--34
+  Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array,
+   and then use a for loop to print the name of each pizza.
+• Modify your for loop to print a sentence using the name of the pizza instead of printing 
+just the name of the pizza. For each pizza you should have one line of output containing a
+ simple statement like I like pepperoni pizza.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var pizzas = ['phentom','tikka','fajida','pepperoni']
+    for(i=0;i<pizzas.length;i++){
+      if(i==0){
+        document.write("<h1>I love to eat,"+pizzas[i]+" pizza.</h1>")
+      }else if(i==1){
+        document.write("<h1>My second priority "+pizzas[i]+" pizza.</h1>")
+      }else{
+        document.write("<h1>I also like ,"+pizzas[i]+" pizza.</h1>")
+      }
+    }
+    document.write(" I really love pizza!<br> I'm always ready to have pizza <br>I really like pizza party!")
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- Checking Usernames: Do the following to create a program that simulates 
+  how websites ensure that everyone 
+  has a unique username.
+• Make a list of five or more usernames called current_users.
+
+• Make another list of five usernames called new_users. Make sure one or two of 
+the new usernames are also in the current_users list.
+
+• Loop through the new_users list to see if each new username has already been used.
+ If it has, print a message that the person will need to enter a new username. 
+ If a username has not been used, print a message saying that the username is available. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var current_users = ['A','B','C','D','E']
+    var new_users = ['a','C','E','G','X','Y','b']
+
+  
+    for(i=0;i<new_users.length;i++){
+      for(j=0;j<current_users.length;j++){
+        if(new_users[i].toLowerCase()==current_users[j].toLowerCase()){
+          document.write("<h1>'"+new_users[i]+"', enter a new username</h1>");
+          break;
+        }else if(j==current_users.length-1 && new_users[i].toLowerCase()!=current_users[j].toLowerCase()){
+          document.write("<h1>'"+new_users[i]+"' username is available........</h1>");
+          break;
+        }
+      }
+    }
+
+
+  </script>
+</body>
+</html>

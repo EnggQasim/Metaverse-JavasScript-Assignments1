@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter your Name");
+        document.write("Lower:"+name.toLowerCase()+"<br>");
+        document.write("Upper:"+name.toUpperCase()+"<br>");
+        
+        function titleCase(string) {
+            var sentence = string.toLowerCase().split(" ");
+            for(var i = 0; i< sentence.length; i++){
+                sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+            }
+            document.write(sentence.join(" "));
+            return sentence;
+        }
+   titleCase("tutorix is one of best e-platforms");
+
+    </script>
+</body>
+</html>
